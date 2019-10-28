@@ -4,7 +4,7 @@
 .tab_link { margin-right: 20px; }
 </style>
 <script>
-a = parseInt(localstorage.a || 0);
+a = parseInt(localStorage.a || 0);
 var as = document.querySelectorAll('a');
 as[a].click();
 localStorage.a = (a + 1) % as.length;
@@ -26,7 +26,7 @@ localStorage.a = (a + 1) % as.length;
   Burndown Chart
 </a>
 
-<iframe name="hi" src="about:blank" style="width: 100%; position:absolute; bottom: 0; left:0; right: 0; top: 40px;"></iframe>
+<iframe name="hi" src="about:blank" style="width: 100%; position: absolute; bottom: 0; left: 0; right: 0; top: 40px;"></iframe>
 
 </body>
 
