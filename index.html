@@ -3,12 +3,6 @@
 <style>
 .tab_link { margin-right: 20px; }
 </style>
-<script>
-a = parseInt(localStorage.a || 0);
-var as = document.querySelectorAll('a');
-as[a].click();
-localStorage.a = (a + 1) % as.length;
-</script>
 </head>
 
 <body>
@@ -32,4 +26,10 @@ localStorage.a = (a + 1) % as.length;
 
 </html
 
+<script>
+a = parseInt(localStorage.a || 0);
+var as = document.querySelectorAll('a');
+as[a].click();
+localStorage.a = (a + 1) % as.length;
+</script>
 
