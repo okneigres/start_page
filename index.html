@@ -29,6 +29,7 @@
 <script>
 a = parseInt(localStorage.a || 0);
 var as = document.querySelectorAll('a');
+if(a.target == "_top") history.pushState({},"");
 as[a].click();
 localStorage.a = (a + 1) % as.length;
 </script>
