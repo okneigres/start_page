@@ -1,0 +1,35 @@
+<html>
+<head>
+<style>
+.tab_link { margin-right: 20px; }
+</style>
+<script>
+a = parseInt(localstorage.a || 0);
+var as = document.querySelectorAll('a');
+as[a].click();
+localStorage.a = (a + 1) % as.length;
+</script>
+</head>
+
+<body>
+
+
+<a target="hi" class="tab_link" href="https://www.figma.com/file/JnkuFCF2oL0dKwYo1JSCKJ7i?embed_host=share&node-id=412%3A26&viewer=1">
+  Habits
+</a>
+
+<a target="hi" class="tab_link" href="https://trello.com/b/YHhF68fh/">
+  Processes 2
+</a>
+
+<a target="hi" class="tab_link" href="https://docs.google.com/spreadsheets/d/1FIp51kf1NPJLrA2I7ll-9_8oMeIuDRzoAQXXLy6FiSQ/edit">
+  Burndown Chart
+</a>
+
+<iframe name="hi" src="about:blank" style="width: 100%; position:fixed; bottom: 0; left:0; right: 0; top: 40px;"></iframe>
+
+</body>
+
+</html
+
+
